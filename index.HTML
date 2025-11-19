@@ -16,16 +16,18 @@
 
         body {
             font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-            overflow: hidden;
+            margin: 0;
+            padding: 0;
         }
 
         .full-container {
             position: relative;
-            height: 100vh;
+            min-height: 100vh;
             width: 100%;
             background-image: url('background.png');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -130,8 +132,16 @@
                 font-size: 48px;
             }
 
+            .logo-header {
+                padding: 30px 20px 20px 20px;
+            }
+
             .logo-header img {
                 width: 80px;
+            }
+
+            .main-content {
+                padding: 20px;
             }
 
             .description {
@@ -142,11 +152,32 @@
                 padding: 14px 40px;
                 font-size: 15px;
             }
+
+            .footer-info {
+                padding: 30px 20px;
+            }
         }
 
         @media (max-width: 480px) {
             h1 {
                 font-size: 36px;
+                margin-bottom: 30px;
+            }
+
+            .logo-header {
+                padding: 20px 20px 10px 20px;
+            }
+
+            .logo-header img {
+                width: 70px;
+            }
+
+            .contact-button-container {
+                margin-bottom: 30px;
+            }
+
+            .description {
+                font-size: 13px;
             }
         }
     </style>
