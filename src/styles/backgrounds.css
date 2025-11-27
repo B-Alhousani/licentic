@@ -1,0 +1,107 @@
+/* Animated Mesh Gradient Background */
+@keyframes gradient-shift {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Mesh Gradient overlay for sections */
+.animated-gradient-bg {
+    background: linear-gradient(135deg,
+            #10B981 0%,
+            #059669 25%,
+            #6B7280 50%,
+            #10B981 75%,
+            #059669 100%);
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+    opacity: 0.03;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Floating shapes/orbs for visual interest */
+.floating-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+    animation: float 6s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.shape-1 {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    right: 5%;
+    animation-delay: 0s;
+    animation-duration: 8s;
+}
+
+.shape-2 {
+    width: 200px;
+    height: 200px;
+    bottom: 15%;
+    left: 10%;
+    animation-delay: 2s;
+    animation-duration: 10s;
+}
+
+.shape-3 {
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    right: 15%;
+    animation-delay: 4s;
+    animation-duration: 7s;
+}
+
+/* Particle-like grid pattern */
+.grid-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        linear-gradient(rgba(16, 185, 129, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(16, 185, 129, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* Colorful accent bars */
+.color-accent {
+    position: absolute;
+    height: 4px;
+    background: linear-gradient(90deg, #10B981, #059669, #10B981);
+    background-size: 200% 100%;
+    animation: gradient-shift 3s ease infinite;
+    z-index: 1;
+}

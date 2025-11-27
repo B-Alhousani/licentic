@@ -1,0 +1,83 @@
+:root {
+  --dot: rgba(16, 185, 129, 0.3);
+  --dot-active: #10B981;
+  --nav-h: clamp(60px, 8vh, 80px);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.app {
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.app::-webkit-scrollbar {
+  display: none;
+}
+
+.app>section {
+  width: 100%;
+  min-height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+/* Footer section should not have height constraint */
+.app>section:last-child {
+  min-height: auto;
+  height: auto;
+}
+
+.dot-nav {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dot-btn {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--dot);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.dot-btn.active {
+  background: var(--dot-active);
+  transform: scale(1.2);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .app>section {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+}

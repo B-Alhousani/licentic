@@ -1,0 +1,73 @@
+.core-values {
+    padding: 6rem 2rem;
+    background-color: var(--white);
+}
+
+.core-values-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.value-card {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    background: var(--light-background);
+    transition: all var(--transition-speed);
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    background: var(--white);
+    border: 1px solid var(--primary-color);
+}
+
+.value-icon {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.value-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--dark-text);
+    margin-bottom: 1rem;
+}
+
+.value-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 1024px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .core-values {
+        padding: 4rem 1.5rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .value-card {
+        padding: 2rem 1.5rem;
+    }
+}

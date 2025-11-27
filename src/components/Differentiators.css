@@ -1,0 +1,77 @@
+.differentiators {
+    padding: 6rem 2rem;
+    background: linear-gradient(180deg, var(--light-background) 0%, var(--white) 100%);
+}
+
+.differentiators-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.differentiators-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.diff-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-speed);
+    display: flex;
+    gap: 1.5rem;
+}
+
+.diff-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+.diff-icon {
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.diff-content {
+    flex: 1;
+}
+
+.diff-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--dark-text);
+    margin-bottom: 0.75rem;
+}
+
+.diff-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 1024px) {
+    .differentiators-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .differentiators {
+        padding: 4rem 1.5rem;
+    }
+
+    .diff-card {
+        padding: 2rem 1.5rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .diff-icon {
+        align-self: center;
+    }
+}

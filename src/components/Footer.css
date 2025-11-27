@@ -1,0 +1,246 @@
+.footer {
+    background: linear-gradient(180deg, #1F2937 0%, #111827 100%);
+    color: var(--white);
+}
+
+.footer-top {
+    padding: 4rem 2rem 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.footer-main-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1.2fr 1fr;
+    gap: 4rem;
+}
+
+.footer-column-title {
+    margin-bottom: 1.2rem;
+}
+
+/* Brand Column */
+.footer-brand-column {
+    max-width: 400px;
+}
+
+.footer-brand-logo {
+    height: 45px;
+    width: auto;
+    margin-bottom: 1.25rem;
+    filter: brightness(0) invert(1);
+}
+
+.footer-tagline {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1.5rem;
+}
+
+.footer-certifications {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+}
+
+.cert-badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    padding: 0.5rem 1rem;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.cert-badge:hover {
+    background: rgba(16, 185, 129, 0.2);
+    border-color: rgba(16, 185, 129, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+.cert-badge:hover .shiny-text__base {
+    color: #ffffff;
+}
+
+.footer-link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-link-list li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-link-list button,
+.footer-link-list li {
+    padding-left: 4px;
+}
+
+.footer-link-list li:hover {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* Contact Column */
+.contact-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    line-height: 1.5;
+}
+
+.contact-item svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: #10B981;
+    transition: transform 0.2s ease;
+}
+
+.contact-item:hover svg {
+    transform: scale(1.1);
+}
+
+.contact-item a,
+.contact-item.linkedin-link {
+    cursor: pointer;
+}
+
+.contact-item:hover {
+    color: #10B981;
+}
+
+.phone-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.linkedin-link {
+    font-weight: 600;
+    color: #10B981;
+}
+
+.linkedin-link:hover {
+    color: #059669;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    padding: 1.75rem 2rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-copyright {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-legal-links {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-legal-links a {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-legal-links a:hover {
+    color: #10B981;
+}
+
+.separator {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer-main-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .footer-brand-column {
+        grid-column: 1 / -1;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-top {
+        padding: 3rem 1.5rem 2rem;
+    }
+
+    .footer-main-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .footer-brand-column {
+        grid-column: auto;
+    }
+
+    .footer-bottom {
+        padding: 1.5rem 1.5rem;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.25rem;
+    }
+
+    .footer-legal-links {
+        justify-content: center;
+    }
+
+    .footer-brand-logo {
+        height: 38px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-certifications {
+        justify-content: center;
+    }
+
+    .cert-badge {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
