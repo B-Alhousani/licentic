@@ -28,7 +28,7 @@
 }
 
 .nav-logo-image {
-  height: 40px;
+  height: 7.5rem;
   filter: brightness(1.4) contrast(1.15) drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
   width: auto;
   transition: transform var(--transition-speed);
@@ -228,7 +228,7 @@
   }
 
   .nav-logo-image {
-    height: 32px;
+    height: 5rem;
   }
 }
 

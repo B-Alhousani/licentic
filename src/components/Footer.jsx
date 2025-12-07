@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import licenticLogo from '../assets/licentic_logo.png';
+import licenticLogo from '../assets/Licentic Logo PNG s (2).png';
 import '../assets/ShinyText.css';
 
 

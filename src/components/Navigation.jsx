@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Navigation.css";
-import licenticLogo from "../assets/licentic-logo.png";
+import licenticLogo from "../assets/Licentic Logo PNG s (2).png";
 
 export default function Navigation({ ids }) {
   const navRef = useRef(null);
