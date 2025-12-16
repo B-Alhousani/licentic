@@ -19,8 +19,8 @@
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
     position: relative;
     z-index: 1;
 }
@@ -216,7 +216,7 @@
 @media (max-width: 1024px) {
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 2.5rem;
     }
 }
 
@@ -227,7 +227,7 @@
 
     .services-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 2.5rem;
     }
 
     .section-subtitle {
@@ -249,4 +249,14 @@
     .service-details {
         transform: none !important;
     }
+}
+.service-card-budget .service-icon {
+    color: #06B6D4;
+}
+
+.service-card-budget .icon-glow {
+    background: radial-gradient(circle, #06B6D4 0%, transparent 70%);
+}
+.service-card-budget .service-details li::before {
+    color: #06B6D4;
 }

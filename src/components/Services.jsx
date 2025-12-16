@@ -94,7 +94,7 @@ const Services = () => {
             description: "We identify and reclaim unused licenses, while ensuring you are effectively licensed.",
             details: [
                 "License usage analysis",
-                "Elimination of waste and redundancy",
+                "Waste elimination",
                 "Right-sizing deployments",
                 "Cloud optimization"
             ]
@@ -113,9 +113,9 @@ const Services = () => {
             title: "NEGOTIATE WITH POWER",
             description: "We leverage our expertise to ensure you get the most favorable terms on your next Enterprise Agreement.",
             details: [
-                "Contract negotiation support",
-                "Vendor relationship management",
-                "Licensing architecture design",
+                "Contract negotiation",
+                "Vendor management",
+                "Architecture design",
                 "Strategic renewal planning"
             ]
         },
@@ -130,10 +130,27 @@ const Services = () => {
             title: "ACHIEVE COMPLIANCE",
             description: "We prepare you for or defend you during vendor audits, turning a potential multi-million dollar liability into a non-event.",
             details: [
-                "Audit defense and response",
+                "Audit defense",
                 "Compliance gap analysis",
-                "Effective license position documentation",
+                "License position docs",
                 "Risk mitigation strategies"
+            ]
+        },
+        {
+            variant: "budget",
+            icon: (
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+                    <path d="M22 12A10 10 0 0 0 12 2v10z" />
+                </svg>
+            ),
+            title: "OPTIMIZE IT BUDGET",
+            description: "We analyze your IT investments to maximize ROI and align spending with strategic objectives for sustainable growth.",
+            details: [
+                "ERP fund assessment",
+                "SLA reviews",
+                "AI ROI visibility",
+                "Staff augmentation"
             ]
         }
     ];
@@ -154,7 +171,6 @@ const Services = () => {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                    Software License & Cloud Optimization saving an average of 20-30% from your software spend
                 </motion.p>
 
                 <div className="services-grid">

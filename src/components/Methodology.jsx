@@ -62,7 +62,7 @@ const Methodology = () => {
                         <span className="highlight-percentage">20-30%</span> Avg Cost Savings
                     </motion.h2>
                     <motion.p className="methodology-subtitle" variants={itemVariants}>
-                        of the total Microsoft contracts spend can be realized through our proven methodology
+                        of the total IT spend can be realized through our proven methodology
                     </motion.p>
                 </motion.div>
 

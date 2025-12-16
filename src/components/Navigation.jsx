@@ -106,6 +106,9 @@ export default function Navigation({ ids }) {
                     Enterprise Agreement Negotiation
                   </button>
                   <button onClick={() => scrollToSection("services")} className="dropdown-item">
+                    IT Budget Review
+                  </button>
+                  <button onClick={() => scrollToSection("services")} className="dropdown-item">
                     Compliance & Audit Defense
                   </button>
                 </div>
