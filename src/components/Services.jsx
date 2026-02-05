@@ -145,7 +145,7 @@ const Services = () => {
         <section id="services" className="services">
             <div className="services-container">
                 <TextReveal className="section-title">
-                    How We PAir IT Expenditure With Actual Usage
+                    How We Pair IT Expenditure With Actual Usage
                 </TextReveal>
                 <motion.p
                     className="section-subtitle"
