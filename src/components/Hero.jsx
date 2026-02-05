@@ -58,20 +58,15 @@ const Hero = () => {
           animate="visible"
         >
           <motion.div className="hero-eyebrow" variants={fadeIn}>
-            ENTERPRISE SOFTWARE LICENSE OPTIMIZATION
+            ENTERPRISE IT SPEND OPTIMIZATION
           </motion.div>
 
           <motion.h1 className="hero-title" variants={fadeInUp}>
-            Only Success Earns Our Fee
+          We operate at the intersection of entitlement and actual usage, enforcing governance at the source
           </motion.h1>
 
           <motion.p className="hero-subtitle" variants={fadeInUp}>
-            In a world where risks abound and results matter most,
-            our contingency based success fee model redefines partnership.
-            You pay nothing upfront only when we deliver the triumphs you seek.
-            Imagine aligning with experts whose incentives mirror yours,
-            fueling relentless drive to exceed expectations and unlock
-            unprecedented value. Join the savvy leaders who’ve turned potential into prosperity; with us, success isn’t just promised it’s paid for.
+           In a world where risks abound and impact matters the most, savvy leaders are hard‑wiring IT spend governance into their operating model. We function exactly where financial spend meets IT usage. With automated signals that block non‑entitled consumption and shut down leakage before it becomes a cost.
 
           </motion.p>
 
@@ -87,7 +82,7 @@ const Hero = () => {
                   <div className="trust-badge-value">Cost Saving</div>
                 </div>
                 <div className="trust-badge-back">
-                  <div className="trust-badge-description">Reducing what you are currently paying</div>
+                  <div className="trust-badge-description">Reallocating wasted entitlements spend</div>
                 </div>
               </div>
             </motion.div>
@@ -98,7 +93,7 @@ const Hero = () => {
                   <div className="trust-badge-value">Cost Optimization</div>
                 </div>
                 <div className="trust-badge-back">
-                  <div className="trust-badge-description">Creating better value for what you spend</div>
+                  <div className="trust-badge-description">Controlling financial IT spend through actual usage</div>
                 </div>
               </div>
             </motion.div>
@@ -109,7 +104,7 @@ const Hero = () => {
                   <div className="trust-badge-value">Cost Avoidance</div>
                 </div>
                 <div className="trust-badge-back">
-                  <div className="trust-badge-description">Preventing future costs from happening</div>
+                  <div className="trust-badge-description">Preventing future costs before happening</div>
                 </div>
               </div>
             </motion.div>
@@ -122,7 +117,7 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <img src={heroImage} alt="Licentic Software License Optimization" className="hero-image" />
+          <img src={heroImage} alt="Licentic IT Spend Optimization" className="hero-image" />
         </motion.div>
       </div>
     </section>
