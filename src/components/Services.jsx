@@ -82,7 +82,7 @@ const ServiceCard = ({ icon, title, description, details, index, variant }) => {
 const Services = () => {
     const services = [
         {
-            variant: "savings",
+            variant: "Core",
             icon: (
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <line x1="12" y1="1" x2="12" y2="23" />
@@ -90,17 +90,16 @@ const Services = () => {
                     <polyline points="16 12 16 8" />
                 </svg>
             ),
-            title: "SLASH SOFTWARE SPEND",
-            description: "We identify and reclaim unused licenses, while ensuring you are effectively licensed.",
+            title: "Core IT Spend",
+            description: "We reclaim unused entitlements, while ensuring effective licensing.",
             details: [
-                "License usage analysis",
+                "consumption signals",
                 "Waste elimination",
-                "Right-sizing deployments",
-                "Cloud optimization"
+                "Right-sizing"
             ]
         },
         {
-            variant: "negotiation",
+            variant: "Governance",
             icon: (
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -110,46 +109,28 @@ const Services = () => {
                     <polyline points="10 9 9 9 8 9" />
                 </svg>
             ),
-            title: "NEGOTIATE WITH POWER",
-            description: "We leverage our expertise to ensure you get the most favorable terms on your next Enterprise Agreement.",
+            title: "Elivate WITH POWER",
+            description: "With Governance-by-design leverage, you get the most favorable terms on renewals.",
             details: [
-                "Contract negotiation",
-                "Vendor management",
-                "Architecture design",
-                "Strategic renewal planning"
+                "Contract rationalization",
+                "usage-paired spend",
+                "Vendor risk management"
             ]
         },
+ 
         {
-            variant: "compliance",
-            icon: (
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    <path d="M9 12l2 2 4-4" />
-                </svg>
-            ),
-            title: "ACHIEVE COMPLIANCE",
-            description: "We prepare you for or defend you during vendor audits, turning a potential multi-million dollar liability into a non-event.",
-            details: [
-                "Audit defense",
-                "Compliance gap analysis",
-                "License position docs",
-                "Risk mitigation strategies"
-            ]
-        },
-        {
-            variant: "budget",
+            variant: "Financial Controls",
             icon: (
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
                     <path d="M22 12A10 10 0 0 0 12 2v10z" />
                 </svg>
             ),
-            title: "OPTIMIZE IT BUDGET",
-            description: "We analyze your IT investments to maximize ROI and align spending with strategic objectives for sustainable growth.",
+            title: "Maximize IT Investments",
+            description: "We maximize the ROI of IT investments and align spending with sustainable growth.",
             details: [
-                "ERP fund assessment",
-                "SLA reviews",
-                "AI ROI visibility",
+                "ERP fund Chargeback",
+                "AI ROI preparedness",
                 "Staff augmentation"
             ]
         }
@@ -163,7 +144,7 @@ const Services = () => {
         <section id="services" className="services">
             <div className="services-container">
                 <TextReveal className="section-title">
-                    How We Turn IT Expenditure Into Savings
+                    How We PAir IT Expenditure With Actual Usage
                 </TextReveal>
                 <motion.p
                     className="section-subtitle"
@@ -191,7 +172,7 @@ const Services = () => {
                 >
                     <Magnetic>
                         <button className="services-cta-button" onClick={openEmail}>
-                            Estimate your savings
+                            Optimize your spend
                         </button>
                     </Magnetic>
                 </motion.div>
