@@ -59,10 +59,10 @@ const Methodology = () => {
                     variants={containerVariants}
                 >
                     <motion.h2 className="methodology-title" variants={itemVariants}>
-                        <span className="highlight-percentage">20-30%</span> Avg Cost Savings
+                        <span className="highlight-percentage">15-30%</span> Avg Cost Savings
                     </motion.h2>
                     <motion.p className="methodology-subtitle" variants={itemVariants}>
-                        of the total IT spend can be realized through our proven methodology
+                        of the total IT spend can be realized through embedded Governance
                     </motion.p>
                 </motion.div>
 

@@ -19,9 +19,8 @@ const Differentiators = () => {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
             ),
-            title: "BIG4 DNA",
-            description: "Combined experience of 25+ years in big4, bringing deep insight into enterprise licensing, audit triggers, contract optimization, and vendor negotiations. Supported by globally recognized certificates such as CISA, CPA, ISO27k, IBM, Microsoft, Oracle, and ServiceNow AI."
-        },
+            title: "Seasoned by DNA",
+            description: "Combined experience of 25+ years, sitting in between Financial Expenditures and actual IT usage /?,
         {
             icon: (
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -29,8 +28,8 @@ const Differentiators = () => {
                     <circle cx="12" cy="10" r="3" />
                 </svg>
             ),
-            title: "VENDOR INDEPENDENCE",
-            description: "Our independence helps organizations buy smarter and helps vendors sell cleaner, more compliant, and sustainably."
+            title: "Future-aligned",
+            description: "Our clients buy smarter, more compliant, and sustainably."
         },
         {
             icon: (

@@ -12,7 +12,7 @@ const CoreValues = () => {
                 </svg>
             ),
             title: "INTEGRITY FIRST",
-            description: "Unbiased, vendor neutral guidance. We advocate for fair sustainable outcomes whether you are buying, selling, or managing software."
+            description: "Unbiased, neutral guidance. We advocate for fair sustainable outcomes whether you are buying, selling, or managing software."
         },
         {
             icon: (
@@ -34,7 +34,7 @@ const CoreValues = () => {
                 </svg>
             ),
             title: "CLIENT CENTRIC",
-            description: "We translate license ambiguity into executable strategy for CIOs, CFOs, Procurement leaders, and Audit Executives."
+            description: "We translate license ambiguity into executable strategy for CFOs, Procurement leaders, CIOs and Audit Executives."
         }
     ];
 
