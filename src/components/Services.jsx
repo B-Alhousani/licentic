@@ -93,9 +93,10 @@ const Services = () => {
             title: "Core IT Spend",
             description: "We reclaim unused entitlements, while ensuring effective licensing.",
             details: [
-                "consumption signals",
-                "Waste elimination",
-                "Right-sizing"
+                 "Right-sizing",
+                 "consumption signals",
+                "Waste elimination"
+               
             ]
         },
         {
