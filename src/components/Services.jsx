@@ -82,7 +82,7 @@ const ServiceCard = ({ icon, title, description, details, index, variant }) => {
 const Services = () => {
     const services = [
         {
-            variant: "Core",
+            variant: "savings",
             icon: (
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <line x1="12" y1="1" x2="12" y2="23" />
@@ -93,14 +93,14 @@ const Services = () => {
             title: "Core IT Spend",
             description: "We reclaim unused entitlements, while ensuring effective licensing.",
             details: [
-                 "Right-sizing",
-                 "consumption signals",
+                "Right-sizing",
+                "consumption signals",
                 "Waste elimination"
-               
+
             ]
         },
         {
-            variant: "Governance",
+            variant: "negotiation",
             icon: (
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -110,7 +110,7 @@ const Services = () => {
                     <polyline points="10 9 9 9 8 9" />
                 </svg>
             ),
-            title: "Elivate WITH POWER",
+            title: "Elevate WITH POWER",
             description: "With Governance-by-design leverage, you get the most favorable terms on renewals.",
             details: [
                 "Contract rationalization",
@@ -118,9 +118,9 @@ const Services = () => {
                 "Vendor risk management"
             ]
         },
- 
+
         {
-            variant: "Financial Controls",
+            variant: "budget",
             icon: (
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />

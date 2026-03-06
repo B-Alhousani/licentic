@@ -20,7 +20,8 @@ const Differentiators = () => {
                 </svg>
             ),
             title: "Seasoned by DNA",
-            description: "Combined experience of 25+ years, sitting in between Financial Expenditures and actual IT usage /?,
+            description: "Combined experience of 25+ years, sitting in between Financial Expenditures and actual IT usage"
+        },
         {
             icon: (
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -28,7 +29,7 @@ const Differentiators = () => {
                     <circle cx="12" cy="10" r="3" />
                 </svg>
             ),
-            title: "Future-aligned",
+            title: "FUTURE-ALIGNED",
             description: "Our clients buy smarter, more compliant, and sustainably."
         },
         {
