@@ -62,11 +62,11 @@ const Hero = () => {
           </motion.div>
 
           <motion.h1 className="hero-title" variants={fadeInUp}>
-          We operate at the intersection of entitlement and actual usage, enforcing governance at the source
+            Where Entitlement Meets Actual Usage
           </motion.h1>
 
           <motion.p className="hero-subtitle" variants={fadeInUp}>
-           In a world where risks abound and impact matters the most, savvy leaders are hard‑wiring IT spend governance into their operating model. We function exactly where financial spend meets IT usage. With automated signals that block non‑entitled consumption and shut down leakage before it becomes a cost.
+            Savvy leaders are hard-wiring IT spend governance into their operating model. We function exactly where financial spend meets IT usage — with automated signals that block non-entitled consumption and shut down leakage before it becomes a cost.
 
           </motion.p>
 

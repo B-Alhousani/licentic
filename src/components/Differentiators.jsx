@@ -20,7 +20,7 @@ const Differentiators = () => {
                 </svg>
             ),
             title: "Seasoned by DNA",
-            description: "Combined experience of 25+ years, sitting in between Financial Expenditures and actual IT usage"
+            description: "25+ years at the intersection of FinOps and IT procurement, engineering outcomes that eliminate tier creep before it reaches your renewal."
         },
         {
             icon: (
@@ -30,7 +30,7 @@ const Differentiators = () => {
                 </svg>
             ),
             title: "FUTURE-ALIGNED",
-            description: "Our clients buy smarter, more compliant, and sustainably."
+            description: "We position clients for sustainable, compliant procurement — structured for where the market is heading, not where it has been."
         },
         {
             icon: (

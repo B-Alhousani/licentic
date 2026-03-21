@@ -29,19 +29,136 @@
     line-height: 1.2;
 }
 
-.highlight-percentage {
+.highlight-text {
     color: var(--primary-color);
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 800;
-    display: block;
-    margin-bottom: 0.5rem;
-    text-shadow: 0 0 30px rgba(16, 185, 129, 0.3);
+    background: linear-gradient(90deg, #10b981, #059669);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.methodology-subtitle {
-    font-size: 1.25rem;
+/* Math Equation UI */
+.equation-container {
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem auto 0 auto;
+    max-width: 650px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.equation-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.5rem;
+    border-radius: 12px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eq-tab {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.eq-tab:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.eq-tab.active {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.equation-math-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.math-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    font-size: 1.15rem;
+}
+
+.math-operator {
+    width: 25px;
+    font-weight: bold;
     color: var(--text-secondary);
-    line-height: 1.6;
+    text-align: left;
+}
+
+.math-label {
+    flex: 1;
+    text-align: left;
+    color: var(--dark-text);
+    font-weight: 500;
+    padding-right: 1rem;
+}
+
+.math-value {
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 1.35rem;
+    color: var(--dark-text);
+}
+
+.math-divider {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.math-divider.glow-green {
+    background: rgba(16, 185, 129, 0.5);
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+.math-row.result {
+    font-size: 1.4rem;
+}
+
+.text-red {
+    color: #ef4444;
+}
+
+.text-green {
+    color: #10b981;
+}
+
+.font-bold {
+    font-weight: 800;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: rgba(239, 68, 68, 0.6);
 }
 
 /* Grid Styles */
@@ -160,11 +277,35 @@
         grid-column: auto;
     }
 
-    .highlight-percentage {
+    .highlight-text {
         font-size: 3rem;
     }
 
     .methodology-title {
         font-size: 1.75rem;
+    }
+
+    .math-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .math-value {
+        align-self: flex-end;
+    }
+
+    .math-operator {
+        display: none;
+    }
+
+    .equation-math-card {
+        padding: 1.5rem;
+    }
+
+    .eq-tab {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
     }
 }

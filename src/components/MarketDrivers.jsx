@@ -12,7 +12,7 @@ const MarketDrivers = () => {
                     <path d="M8 17v-3" />
                 </svg>
             ),
-            title: "UnManaged IT USAGE Leaks Revenue",
+            title: "UNMANAGED IT USAGE INCREASES COST",
             description: "Organizations lose track of licenses, pay for unused seats. Software sprawl leads to hidden costs."
         },
         {
@@ -35,7 +35,7 @@ const MarketDrivers = () => {
                     <path d="M12 16h.01" />
                 </svg>
             ),
-            title: "INCREASED RISK OF OVER USAGE",
+            title: "INCREASED RISK OF NON-COMPLIANCE",
             description: "Unmanaged spend can result in multi-million dollar liabilities. Non-compliance risks appear with complex licensing models."
         }
     ];
@@ -43,7 +43,7 @@ const MarketDrivers = () => {
     return (
         <section id="market-drivers" className="market-drivers">
             <div className="market-drivers-container">
-                <h2 className="section-title">The IT Spend Crisis, unmatched usage that is costing Enterprises Millions</h2>
+                <h2 className="section-title">Why IT Spend Governance Can No Longer Wait</h2>
 
                 <div className="drivers-grid">
                     {drivers.map((driver, index) => (

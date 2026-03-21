@@ -34,7 +34,7 @@ const CoreValues = () => {
                 </svg>
             ),
             title: "CLIENT CENTRIC",
-            description: "We translate license ambiguity into executable strategy for CFOs, Procurement leaders, CIOs and Audit Executives."
+            description: "We translate license ambiguity into executable strategy for CFOs, Procurement leaders, Audit Executives and CIOs."
         }
     ];
 

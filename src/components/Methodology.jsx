@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import './Methodology.css';
 
 const Methodology = () => {
     const [inView, setInView] = useState(false);
+    const [activeTab, setActiveTab] = useState('unmanaged');
     const ref = useRef(null);
 
     useEffect(() => {
@@ -51,6 +52,7 @@ const Methodology = () => {
     return (
         <section id="methodology" className="methodology-section">
             <div className="methodology-container">
+
                 <motion.div
                     className="methodology-header"
                     ref={ref}
@@ -58,12 +60,9 @@ const Methodology = () => {
                     animate={inView ? "visible" : "hidden"}
                     variants={containerVariants}
                 >
-                    <motion.h2 className="methodology-title" variants={itemVariants}>
-                        <span className="highlight-percentage">15-30%</span> Avg Cost Savings
+                    <motion.h2 className="methodology-title" variants={itemVariants} style={{ marginBottom: '3rem' }}>
+                        Execution Strategy
                     </motion.h2>
-                    <motion.p className="methodology-subtitle" variants={itemVariants}>
-                        of the total IT spend can be realized through embedded Governance
-                    </motion.p>
                 </motion.div>
 
                 <motion.div
@@ -115,6 +114,96 @@ const Methodology = () => {
                         <p className="card-description">
                             Leveraging renewal timings and aligning on optimized pricing prior to the agreement's anniversary term for maximum cost efficiency.
                         </p>
+                    </motion.div>
+                </motion.div>
+
+                <motion.div
+                    className="methodology-header"
+                    initial="hidden"
+                    animate={inView ? "visible" : "hidden"}
+                    variants={containerVariants}
+                    style={{ marginTop: '7rem' }}
+                >
+                    <motion.h2 className="methodology-title" variants={itemVariants}>
+                        Your software bill, <span className="highlight-text">recalculated</span>
+                    </motion.h2>
+
+                    <motion.div className="equation-container" variants={itemVariants}>
+                        <div className="equation-tabs">
+                            <button
+                                className={`eq-tab ${activeTab === 'unmanaged' ? 'active' : ''}`}
+                                onClick={() => setActiveTab('unmanaged')}
+                            >
+                                Status Quo
+                            </button>
+                            <button
+                                className={`eq-tab ${activeTab === 'governed' ? 'active' : ''}`}
+                                onClick={() => setActiveTab('governed')}
+                            >
+                                With Licentic
+                            </button>
+                        </div>
+
+                        <div className="equation-math-card">
+                            <AnimatePresence mode="wait">
+                                {activeTab === 'unmanaged' ? (
+                                    <motion.div
+                                        key="unmanaged"
+                                        initial={{ opacity: 0, x: -20 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        exit={{ opacity: 0, x: 20 }}
+                                        transition={{ duration: 0.3 }}
+                                        className="math-content"
+                                    >
+                                        <div className="math-row">
+                                            <span className="math-label">Base Software Cost</span>
+                                            <span className="math-value">$1,000,000</span>
+                                        </div>
+                                        <div className="math-row addition">
+                                            <span className="math-operator">+</span>
+                                            <span className="math-label">Vendor Increase (e.g. Microsoft 20%)</span>
+                                            <span className="math-value text-red">$200,000</span>
+                                        </div>
+                                        <div className="math-divider"></div>
+                                        <div className="math-row result">
+                                            <span className="math-operator">=</span>
+                                            <span className="math-label">Current Spend</span>
+                                            <span className="math-value text-red font-bold">$1,200,000</span>
+                                        </div>
+                                    </motion.div>
+                                ) : (
+                                    <motion.div
+                                        key="governed"
+                                        initial={{ opacity: 0, x: -20 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        exit={{ opacity: 0, x: 20 }}
+                                        transition={{ duration: 0.3 }}
+                                        className="math-content"
+                                    >
+                                        <div className="math-row">
+                                            <span className="math-label">Current Spend</span>
+                                            <span className="math-value strikethrough">$1,200,000</span>
+                                        </div>
+                                        <div className="math-row subtraction">
+                                            <span className="math-operator">-</span>
+                                            <span className="math-label">Leakage Recovered</span>
+                                            <span className="math-value text-green">$200,000</span>
+                                        </div>
+                                        <div className="math-row subtraction">
+                                            <span className="math-operator">-</span>
+                                            <span className="math-label">Renewal Savings</span>
+                                            <span className="math-value text-green">$150,000</span>
+                                        </div>
+                                        <div className="math-divider glow-green"></div>
+                                        <div className="math-row result">
+                                            <span className="math-operator">=</span>
+                                            <span className="math-label">What You Should Pay</span>
+                                            <span className="math-value text-green font-bold">$850,000</span>
+                                        </div>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </div>
                     </motion.div>
                 </motion.div>
             </div>

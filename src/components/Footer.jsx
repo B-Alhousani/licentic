@@ -57,7 +57,7 @@ const Footer = () => {
                             <ul className="footer-link-list">
                                 <li className='contact-item'>Software License Optimization</li>
                                 <li className='contact-item'>Enterprise Agreements Negotiation</li>
-                                <li className='contact-item'>Compliance & Audit Defense</li>
+                                <li className='contact-item'>IT Budget Review</li>
                             </ul>
                         </div>
 

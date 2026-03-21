@@ -110,12 +110,12 @@ const Services = () => {
                     <polyline points="10 9 9 9 8 9" />
                 </svg>
             ),
-            title: "Elevate WITH POWER",
+            title: "Elevate With Power",
             description: "With Governance-by-design leverage, you get the most favorable terms on renewals.",
             details: [
                 "Contract rationalization",
                 "usage-paired spend",
-                "Vendor risk management"
+                "Optimization as a Service"
             ]
         },
 

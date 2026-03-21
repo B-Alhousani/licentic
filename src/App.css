@@ -28,7 +28,7 @@ body,
 
 .app>section {
   width: 100%;
-  min-height: 100vh;
+  height: auto;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,6 @@ body,
 
 /* Footer section should not have height constraint */
 .app>section:last-child {
-  min-height: auto;
   height: auto;
 }
 
