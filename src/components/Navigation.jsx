@@ -18,7 +18,11 @@ export default function Navigation({ ids }) {
   const scrollToSection = (sectionId) => {
     const container = document.querySelector(".app");
     const el = document.getElementById(sectionId);
-    if (!el) return;
+    if (!el) {
+      // Not on the home page: go there and jump to the section
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
     const offset = getNavHeight();
     if (container) {
       const top = el.offsetTop - offset;
@@ -33,6 +37,10 @@ export default function Navigation({ ids }) {
   };
 
   const goHome = () => {
+    if (window.location.pathname !== "/") {
+      window.location.href = "/";
+      return;
+    }
     const id = document.getElementById("hero") ? "hero" : sectionIds[0];
     scrollToSection(id);
   };
@@ -136,6 +144,14 @@ export default function Navigation({ ids }) {
               >
                 Differentiators
               </button>
+            </li>
+            <li className="nav-item">
+              <a
+                href="/knowledge-hub"
+                className={`nav-link ${window.location.pathname.startsWith("/knowledge-hub") ? "active" : ""}`}
+              >
+                Knowledge Hub
+              </a>
             </li>
             <li className="nav-item">
               <button

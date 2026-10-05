@@ -108,6 +108,8 @@ const Footer = () => {
                             © {new Date().getFullYear()} Licentic. All rights reserved. | Optimizing software licenses since 2021
                         </p>
                         <div className="footer-legal-links">
+                            <a href="/knowledge-hub">Knowledge Hub</a>
+                            <span className="separator">•</span>
                             <a href="#privacy">Privacy Policy</a>
                             <span className="separator">•</span>
                             <a href="#terms">Terms of Service</a>

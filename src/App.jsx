@@ -8,9 +8,25 @@ import CoreValues from "./components/CoreValues";
 import Differentiators from "./components/Differentiators";
 import Footer from "./components/Footer";
 import ParticleBackground from "./components/ParticleBackground";
+import KnowledgeHub from "./pages/KnowledgeHub";
+import KnowledgeHubArticle from "./pages/KnowledgeHubArticle";
+import knowledgeHubItems from "./pages/knowledgeHubItems";
 import "./App.css";
 
+// Simple page routing based on the URL path.
 export default function App() {
+  const path = window.location.pathname.replace(/\/+$/, "") || "/";
+  if (path === "/knowledge-hub") return <KnowledgeHub />;
+  if (path.startsWith("/knowledge-hub/")) {
+    const slug = path.split("/")[2];
+    const item = knowledgeHubItems.find((i) => i.slug === slug);
+    if (item) return <KnowledgeHubArticle item={item} />;
+    return <KnowledgeHub />;
+  }
+  return <HomePage />;
+}
+
+function HomePage() {
   const ids = useMemo(
     () => ["hero", "methodology", "market-drivers", "services", "core-values", "differentiators", "cta", "contact"],
     []
@@ -26,6 +42,18 @@ export default function App() {
       container.scrollTo({ top: targetScroll, behavior: "smooth" });
     }
   };
+
+  // When arriving from another page with a link like /#methodology, jump to that section
+  useEffect(() => {
+    const hash = window.location.hash.replace("#", "");
+    if (!hash) return;
+    const t = setTimeout(() => {
+      const container = containerRef.current;
+      const section = document.getElementById(hash);
+      if (container && section) container.scrollTo({ top: section.offsetTop - 80, behavior: "smooth" });
+    }, 300);
+    return () => clearTimeout(t);
+  }, []);
 
   // Track active section on scroll
   useEffect(() => {
